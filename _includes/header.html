@@ -1,0 +1,17 @@
+<!-- Header -->
+<header id="header" class="skel-layers-fixed">
+    <h1><a href="{{ site.baseurl }}/" class="site-title" >{{ site.title }}</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="{{ site.baseurl }}/timeline.html">Timeline</a></li>
+            <li><a href="{{ site.baseurl }}/rationale.html">Rationale</a></li>
+            <li><a href="{{ site.baseurl }}/sources.html">Sources</a></li>
+
+            {% for page in site.pages %}
+                  {% if page.title %}
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                  {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

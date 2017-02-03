@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  {% include /head.html %}
+
+	<body id="top">
+
+        {% include /header.html %}
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <h2>The Orange Report</h2>
+                <p>a history of Presidential events</p>
+                <ul class="actions">
+                    <li><a href="/timeline.html" class="button big alt">Timeline</a></li>
+                </ul>
+            </div>
+        </section>
+        {{ content }}
+        {% include /footer.html %}
+
+    </body>
+
+</html>
